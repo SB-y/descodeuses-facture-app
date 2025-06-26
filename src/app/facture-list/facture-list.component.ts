@@ -89,7 +89,7 @@ export class FactureListComponent implements OnInit {
     this.factureService.deleteFacture(id).subscribe(()=>
       {// actualiser la liste après la suppression
         this.fetchFacture(); // synchronisation du front avec le "serveur" (visualier le changement dans l'affichage)
-        this.snackBar.open('Deleted !','', {duration:1000});
+        this.snackBar.open('Supprimé !','', {duration:1000});
       })
 }
 

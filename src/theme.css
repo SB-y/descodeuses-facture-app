@@ -1,3 +1,9 @@
 :root {
     --mat-sys-primary: light-dark(var(--color-teal-600), var(--color-teal-600));
   }
+
+
+  .mat-mdc-form-field .mdc-text-field {
+    background-color: #f3f4f6 !important; /* Gris clair */
+    border-radius: 4px; /* Facultatif */
+  }
