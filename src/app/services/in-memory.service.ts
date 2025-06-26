@@ -23,4 +23,9 @@ export class InMemoryDataService implements InMemoryDbService {
 
   }
 
+  // pour d'ajouter un article si tout est supprimé (génére un id 1 si id:null est envoyé)
+  genId(factures: Facture[]): number {
+    return factures.length > 0 ? Math.max(...factures.map(f => f.id!)) + 1 : 1;
+  }
+
 }
