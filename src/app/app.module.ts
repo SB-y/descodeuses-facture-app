@@ -16,11 +16,17 @@ import {MatCardModule} from '@angular/material/card';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CalculatriceComponent } from './calculatrice/calculatrice.component';
+import { RouterLink, RouterModule } from '@angular/router';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FactureListComponent
+    FactureListComponent,
+    CalculatriceComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +46,10 @@ import { HttpClientModule } from '@angular/common/http';
       InMemoryDataService,
       { delay: 200 }
     ),
+    RouterLink, 
+    RouterModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

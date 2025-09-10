@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { routes } from './app-routing.module';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,4 +12,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'facture-app';
+  listMenu = routes;
 }
+
+

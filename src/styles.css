@@ -3,5 +3,23 @@
 @import "tailwindcss/utilities.css";
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* enlève le border-radius du hover */
+a.mat-mdc-list-item {
+    border-radius: 0 !important;
+}
+
+/* pour supprimer le ripple arrondi */
+a.mat-mdc-list-item::before,
+a.mat-mdc-list-item::after {
+    border-radius: 0 !important;
+}

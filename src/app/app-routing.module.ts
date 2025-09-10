@@ -1,12 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FactureListComponent } from './facture-list/facture-list.component';
+import { CalculatriceComponent } from './calculatrice/calculatrice.component';
 
-const routes: Routes = [
+
+export const routes: Routes = [
   {
-    path:'facture-list', 
+    path:'', 
     component: FactureListComponent, 
-    title: 'Facture List',
+    title: 'Gestion de facture',
+    data:{isMenu: true}
+},
+{
+  path:'calculatrice', 
+  component: CalculatriceComponent, 
+  title: 'Calculatrice',
+  data:{isMenu: true}
 },
 ];
 
